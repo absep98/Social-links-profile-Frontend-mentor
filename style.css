@@ -1,0 +1,117 @@
+/* Import the Inter font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Define CSS variables for colors */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --blue: hsl(228, 45%, 44%);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* Ensure all elements use the same box-sizing */
+  }
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    background-color: black;
+    height: 100%; /* Ensures the html and body take the full viewport height */
+    width: 100%; /* Ensures the html and body take the full viewport width */
+ 
+}
+
+.attribution {
+  font-size: 0.8em;
+}
+
+.attribution a {
+  color: var(--blue);
+}
+
+.container {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    padding-top: 6em; /* Add padding to move content down */
+    padding-left: 1em;
+    padding-bottom: 4em;
+}
+.card {
+    width: 100%; /* Take full width of the parent */
+    height: 100%; /* Take full height of the parent */
+    background-color: var(--grey-800);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+   margin-bottom: 0;
+    margin-left: 2em;
+    margin-top: 0;
+}
+h3{
+    color: var(--green);
+    margin-left: 3.5em;
+    margin-top: 0.5em;
+}
+h4{
+    margin-left: 2em;
+}
+.img-card {
+    width: 100% ;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-card img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.text-cont {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+button{
+    background-color: var(--grey-700);
+    color: var(--white);
+    border-radius: 10px;
+    width: 18em;
+    margin: 0.2em 1.5em;
+    height: 2em;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+button:hover{
+    background-color: var(--green);
+    color: var(--grey-900)
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  body {
+    padding: 40px;
+  }
+  .attribution {
+    font-size: 1em;
+  }
+}
